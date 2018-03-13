@@ -4,8 +4,9 @@ new Vue({
         name: 'Kare'
     },
     methods: {
-      greet: function(){
-        return "Good Bad Ugly"
+      greet: function(time){
+        console.log(`Method begin ${time}`);
+        return "Good Bad Ugly" + time;
       }
     }
 });
