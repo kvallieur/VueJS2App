@@ -1,18 +1,18 @@
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>VueJS App</title>
-  <link href="styles.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 </head>
 
 <body>
   <div id="vue-app">
-    <h1>Hi {{name}}</h1>
-    <h2>{{greet('Afternoon')}}</h2>
+    <h1>Hello There This is {{name}}</h1>
+    <a v-bind:href="url">Google</a><br><br>
+    <input type="text" :value="age">
+    <p v-html=htmlContent />
   </div>
 </body>
-<script src="app.js"></script>
+<script src="dataBind.js"></script>
 
 </html>
